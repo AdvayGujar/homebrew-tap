@@ -5,7 +5,7 @@ class Walle < Formula
   sha256 "baaf18c512b207e705cc4c2a3bd0c475450256b8e2f07e63971c508981e131a7"
   license "MIT"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   def install
     system "./scripts/build.sh", "--version", version.to_s, "--prefix", prefix
